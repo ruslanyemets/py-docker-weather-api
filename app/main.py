@@ -37,7 +37,7 @@ def get_weather() -> None:
             f"{city}/{country} {last_updated} Weather: "
             f"{temp_c} Celsius, {weather_condition}"
         )
-    except Exception as err:
+    except requests.exceptions.RequestException as err:
         print(f"Error: {err}")
 
 
