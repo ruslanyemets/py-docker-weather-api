@@ -2,9 +2,9 @@ FROM python:3.9-slim
 
 LABEL maintainer="developer@example.com"
 
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONUNBUFFERED=1
 
-WORKDIR app/
+WORKDIR /app
 
 COPY requirements.txt requirements.txt
 
